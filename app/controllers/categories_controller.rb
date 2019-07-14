@@ -9,8 +9,9 @@ class CategoriesController < ApplicationController
   end
 
   # GET /categories/1
+  #vista show muestra todas las categorias y sus peliculas como un array
   def show
-    render json: @category
+    render json: @category, show_movies: true
   end
 
   # POST /categories
